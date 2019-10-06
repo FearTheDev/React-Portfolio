@@ -1,2 +1,3 @@
-export { default as Header} from './Layouts/Header';
-export { default as Footer} from './Layouts/Footer';
+// Export components
+export {default as SocialMedia} from './SocialMedia/SocialMedia';
+export {default as SideNavigation} from './SideNavigation/SideNavigation';

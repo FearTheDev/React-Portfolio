@@ -1,0 +1,60 @@
+@import '../../styles/global.scss';
+@import '../../styles/variables.scss';
+
+
+
+.sidebar{
+    position: relative;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:350px;
+    border:none;
+    box-shadow: none;
+    border-radius: none;
+    height:100vh;
+    background-color: transparentize(invert($primaryColor), 0.4);
+    color:$primaryColor;
+
+    h1{
+        text-align: center;
+        font-size:2rem;
+        user-select:none;
+
+        span{
+            display:flex;
+            justify-content: center;
+            padding:5px;
+            font-size:1.2rem;
+            // background-color:$primaryColor;
+            color:$primaryColor;
+        }
+    }
+
+    .avatar{
+        width: 128px;
+        height:128px;
+        margin: 10px 5px;
+    }
+
+    footer{
+        position: absolute;
+        bottom:0;
+        left:0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        padding:10px 0;
+
+        .copyright{
+            color:darken($primaryColor, 10%);
+            font-size:0.7rem;
+        }
+    }
+}
+
+
