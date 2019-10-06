@@ -2,7 +2,9 @@ import React from 'react';
 
 const Footer = props =>{
     return(
-        <h5>Footer</h5>
+        <footer>
+            <h5>Placeholder Footer</h5>
+        </footer>
     );
 };
 

@@ -1,17 +1,16 @@
 import React from 'react';
-import { AppBar, Typography } from '@material-ui/core';
-import ToolBar from '@material-ui/core/Toolbar';
 
-const Header = props => {
-    
+const Header = ({children}) => {
+
     return (
-        <AppBar position="static">
-            <ToolBar>
-                <Typography variant="headline" color="inherit">
-                    FearTheDeveloper
-            </Typography>
-            </ToolBar>
-        </AppBar>
+        <header>
+            {children}
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>    
+            </nav>
+        </header>
     );
 }
 
