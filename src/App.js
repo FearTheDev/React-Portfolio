@@ -14,9 +14,9 @@ const sideNavigationData = {
 
 // Social Media Links
 const socialMediaData = {
-  twitter: 'FearTheDev',
-  github: 'FearTheDev',
-  linkedin: 'FearTheDev',
+  twitter: 'https://twitter.com/FearTheDev',
+  github: 'https://github.com/FearTheDev',
+  linkedin: 'https://www.linkedin.com/in/fearthedev/',
 }
 
 // Greeting Information
@@ -34,8 +34,8 @@ function App() {
       </SideNavigation>
 
       <MainContent>
-          <Greeting {...greetingData}/>
-          <Greeting intro="Ugh.. like dude this is mine.. who invited you? " name="{React}" message="Yeah.. thanks for stopping by I guess.."/>
+          {/* <Greeting {...greetingData}/> */}
+          <Greeting intro="Welcome to " name="fearthedev.com" message="I am using code to construct awesome things."/>
 
           {/* <Projects user="FearTheDev"/> */}
           

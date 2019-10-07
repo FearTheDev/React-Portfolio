@@ -16,7 +16,6 @@
         justify-content: center;
         height:300px;
         padding:5px;
-        max-width:920px;
         user-select:none;
 
         h1{
@@ -42,7 +41,7 @@
 
         h2{
             font-size:1.4rem;
-            color: darken(#FFF, 20%);
+            color: lighten($primaryColor, 50%);
             font-weight:400;
             margin-top:15px;
         }

@@ -1,11 +1,9 @@
 // Background Colors
 // $primaryBackgroundColor: #263238;
-$primaryBackgroundColor: #212121;
+$primaryBackgroundColor: #263238;
 $secondaryBackgroundColor: #424242;
-$navigationBackgroundColor: darken(#212121, 3%);
-$navigationBorder: darken($navigationBackgroundColor, 5%);
+$primaryColor: #fff;
 
-// Text Colors
-$primaryColor: #FFF;
-$navigationColor: #FAFAFA;
-$secondaryNavigationColor: #FFF;
+$navigationBackgroundColor: #546E7A;
+$navigationColor: #fff;
+$secondaryNavigationColor: #fff;

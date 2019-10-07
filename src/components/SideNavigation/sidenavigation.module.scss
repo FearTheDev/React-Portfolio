@@ -28,7 +28,7 @@
             justify-content: center;
             padding:10px 10px;
             font-size:1.2rem;
-            background-color: darken($navigationBackgroundColor, 20%);
+            background-color: lighten($navigationBackgroundColor, 4%);
             color:$secondaryNavigationColor;
             margin-top:20px;
         }
