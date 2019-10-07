@@ -4,39 +4,53 @@
 
 
 .sidebar{
-    position: relative;
-    left:0;
-    top:0;
+    position: fixed;
     display:flex;
     flex-direction: column;
     align-items:center;
-    width:350px;
-    border:none;
-    box-shadow: none;
+    justify-content: center;
+    min-width:300px;
     border-radius: none;
     height:100vh;
-    background-color: transparentize(invert($primaryColor), 0.4);
-    color:$primaryColor;
+    background-color: $navigationBackgroundColor;
+    color:$navigationColor;
+    padding:30px 10px;
 
     h1{
         text-align: center;
         font-size:2rem;
         user-select:none;
+        margin-top:20px;
+        color: $navigationColor;
 
         span{
             display:flex;
             justify-content: center;
-            padding:5px;
+            padding:10px 10px;
             font-size:1.2rem;
-            // background-color:$primaryColor;
-            color:$primaryColor;
+            background-color: darken($navigationBackgroundColor, 20%);
+            color:$secondaryNavigationColor;
+            margin-top:20px;
         }
     }
 
+    h2{
+        user-select:none;
+        color: $navigationColor;
+    }
+
     .avatar{
-        width: 128px;
-        height:128px;
-        margin: 10px 5px;
+        width: 200px;
+        height:200px;
+        margin: 30px 5px;
+    }
+
+    .email{
+        font-size:0.8rem;
+        font-weight:400;
+        color:$navigationColor;
+        text-decoration: none;
+        user-select: none;
     }
 
     footer{
@@ -51,7 +65,7 @@
         padding:10px 0;
 
         .copyright{
-            color:darken($primaryColor, 10%);
+            color:darken($navigationColor, 10%);
             font-size:0.7rem;
         }
     }

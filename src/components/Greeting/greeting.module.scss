@@ -1,0 +1,53 @@
+@import '../../styles/global.scss';
+@import '../../styles/variables.scss';
+
+.body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    min-height:100vh;
+    background-color:$primaryBackgroundColor;
+
+    .message{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height:300px;
+        padding:5px;
+        max-width:920px;
+        user-select:none;
+
+        h1{
+            font-size: 3.5rem;
+            color: $primaryColor;
+            font-weight:400;
+
+            span{
+                background-color: transparentize(#000, 0.69);
+                font-size:3rem;
+                font-weight:700;
+                padding:10px 40px;
+                border-top-right-radius:0px;
+                border-bottom-left-radius:0px;
+                border-top-left-radius:180px;
+                border-bottom-right-radius:80px;
+                text-transform: uppercase;
+                box-shadow: 1px 3px 1px #0002;
+                user-select:none;
+                
+            }
+        }
+
+        h2{
+            font-size:1.4rem;
+            color: darken(#FFF, 20%);
+            font-weight:400;
+            margin-top:15px;
+        }
+
+    }
+
+    
+}

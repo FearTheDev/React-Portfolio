@@ -9,15 +9,15 @@ const SocialMedia = ({twitter, github, linkedin}) => {
         <div className={socialmedia.wrapper}>
             <div className={socialmedia.media}>
                 <i className="fab fa-twitter"></i>
-                <Typography className={socialmedia.type}>Twitter</Typography>
+                <a href={twitter} target="_blank" rel="noopener noreferrer"><Typography className={socialmedia.type}>Twitter</Typography></a>
             </div>
             <div className={socialmedia.media}>
                 <i className="fab fa-github"></i>
-                <Typography className={socialmedia.type}>GitHub</Typography>
+                <a href={github} target="_blank" rel="noopener noreferrer"><Typography className={socialmedia.type}>GitHub</Typography></a>
             </div>
             <div className={socialmedia.media}>
                 <i className="fab fa-linkedin-in"></i>
-                <Typography className={socialmedia.type}>LinkedIn</Typography>
+                <a href={linkedin} target="_blank" rel="noopener noreferrer"><Typography className={socialmedia.type}>LinkedIn</Typography></a>
             </div>
         </div>
     );
