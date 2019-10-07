@@ -20,7 +20,11 @@ const Projects = ({user}) =>{
         <div className={projects.body}>
             
             {userRepo.map((repo, index) =>{
-                return <Project key={index} {...repo}/>
+                return (
+                <div className={projects.project}>
+                    <Project key={index} {...repo}/>
+                </div>
+                );
             })}
             
         </div>

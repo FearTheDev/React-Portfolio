@@ -34,8 +34,8 @@ function App() {
       </SideNavigation>
 
       <MainContent>
-          {/* <Greeting {...greetingData}/> */}
-          <Greeting intro="Welcome to " name="fearthedev.com" message="I am using code to construct awesome things."/>
+          <Greeting {...greetingData}/>
+          {/* <Greeting intro="Welcome to " name="fearthedev.com" message="I am using code to construct awesome things."/> */}
 
           <Projects user="FearTheDev"/>
           
