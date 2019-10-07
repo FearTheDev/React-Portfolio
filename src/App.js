@@ -37,7 +37,7 @@ function App() {
           {/* <Greeting {...greetingData}/> */}
           <Greeting intro="Welcome to " name="fearthedev.com" message="I am using code to construct awesome things."/>
 
-          {/* <Projects user="FearTheDev"/> */}
+          <Projects user="FearTheDev"/>
           
       </MainContent>
     </div>
