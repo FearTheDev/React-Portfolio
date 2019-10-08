@@ -1,32 +1,30 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Project from './Project';
 import axios from 'axios';
 import projects from './projects.module.scss';
 
-const Projects = ({user}) =>{
+const Projects = ({ user, repoFilter }) => {
     const [userRepo, setUserRepo] = useState();
 
-    useEffect(() =>{
+    useEffect(() => {
         axios.get(`https://api.github.com/users/${user}/repos`)
-        .then(res => setUserRepo(res.data.reverse()))
-        .catch(error => console.log(`Error ${error}`));
+            .then(res => setUserRepo(res.data.reverse()))
+            .catch(error => console.log(`Error ${error}`));
     }, [user]);
 
-    if(!userRepo){
+    if (!userRepo) {
         return <h1>Fetching projects..</h1>
     }
 
-    return(
+    return (
         <div className={projects.body}>
-            
-            {userRepo.map((repo, index) =>{
-                return (
-                <div className={projects.project}>
-                    <Project key={index} {...repo}/>
-                </div>
-                );
-            })}
-            
+
+            {
+                userRepo.filter(repo =>(repo.description && repo.description.includes(`${repoFilter.key}`))).map((repo, index) => {
+                    return (<div key={index} className={projects.project}><Project  {...repo} repoFilter={repoFilter} /></div>);
+                }
+            )}
+
         </div>
     );
 };

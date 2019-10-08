@@ -4,9 +4,9 @@ import './styles/app.scss';
 
 // Side Navigation Information
 const sideNavigationData = {
-  handle: 'FearTheDev',
+  handle: 'alecblkly',
   user: 'John Shoff',
-  title: 'Full Stack Developer',
+  title: 'Lambda School Student',
   img: 'https://avatars2.githubusercontent.com/u/13228579?v=4',
   email: 'fearthedeveloper@gmail.com',
   copyright: 'Copyright 2019 FearTheDev.com',
@@ -26,6 +26,10 @@ const greetingData = {
   message: 'I am a Full Stack Developer that enjoys the challenge of writing software that solves problems and displaying data in a visually appealing way.',
 }
 
+const repoFilter = {
+  key: '*',
+}
+
 function App() {
   return (
     <div className="app">
@@ -37,7 +41,7 @@ function App() {
           <Greeting {...greetingData}/>
           {/* <Greeting intro="Welcome to " name="fearthedev.com" message="I am using code to construct awesome things."/> */}
 
-          <Projects user="FearTheDev"/>
+          <Projects user={sideNavigationData.handle} repoFilter={repoFilter}/>
           
       </MainContent>
     </div>
